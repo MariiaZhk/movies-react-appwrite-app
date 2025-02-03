@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { useDebounce } from "react-use";
 import "./App.css";
 import Search from "./components/Search";
 import Loader from "./components/Loader";
+import MovieCard from "./components/MovieCard";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 
@@ -20,6 +22,9 @@ function App() {
   const [errorMessage, setErrorMessage] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const [movieList, setMovieList] = useState([]);
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("");
+
+  useDebounce(() => setDebouncedSearchTerm(searchTerm), 600, [searchTerm]);
 
   const fetchMovies = async (query = "") => {
     setIsLoading(true);
@@ -49,8 +54,8 @@ function App() {
   };
 
   useEffect(() => {
-    fetchMovies();
-  }, []);
+    fetchMovies(debouncedSearchTerm);
+  }, [debouncedSearchTerm]);
 
   return (
     <main>
@@ -58,8 +63,11 @@ function App() {
       <div className="wrapper">
         <header>
           <img src="./hero.png" alt="Movies Banner" />
-          Find <span className="text-gradient">Movies</span> You&apos;ll Enjoy
-          Without the Hassle
+          <h1>
+            {" "}
+            Find <span className="text-gradient">Movies</span> You&apos;ll Enjoy
+            Without the Hassle
+          </h1>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </header>
         <section className="all-movies">
@@ -71,9 +79,7 @@ function App() {
           ) : (
             <ul>
               {movieList.map((movie) => (
-                <p key={movie.id} className="text-white">
-                  {movie.title}
-                </p>
+                <MovieCard key={movie.id} movie={movie} />
               ))}
             </ul>
           )}
