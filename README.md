@@ -1,7 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://www.youtube.com/watch?v=dCLhUialKPQ" target="_blank">
-      <img src="https://github.com/user-attachments/assets/acb3c1e6-04ef-4787-a602-f16abe9a04fe" alt="Project Banner">
+     <img src="https://github.com/user-attachments/assets/acb3c1e6-04ef-4787-a602-f16abe9a04fe" alt="Project Banner">
     </a>
   <br />
   
@@ -19,7 +18,7 @@
 1. 🤖 [Introduction](#introduction)
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
+4. 🤸 [Deployment](#deployment)
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -47,4 +46,9 @@ Built with React.js for the user interface, Appwrite for the Trending Movies Alg
 
 Follow these steps to set up the project locally on your machine.
 
-**Running the Project**
+## <a name="deployment">🤸 Deployment</a>
+
+The application is live! Check it out here:  
+🔗 **[Live Demo on Vercel](https://your-app-name.vercel.app/)**
+
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-blue?style=for-the-badge&logo=vercel)](https://your-app-name.vercel.app/)
