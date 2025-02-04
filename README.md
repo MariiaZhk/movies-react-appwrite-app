@@ -1,9 +1,4 @@
 <div align="center">
-  <br />
-     <img src="https://github.com/user-attachments/assets/acb3c1e6-04ef-4787-a602-f16abe9a04fe" alt="Project Banner">
-    </a>
-  <br />
-  
   <div>
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
@@ -27,7 +22,7 @@ Built with React.js for the user interface, Appwrite for the Trending Movies Alg
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - React.js,
-- Appwrite.
+- Appwrite,
 - Tailwind CSS.
 
 ## <a name="features">🔋 Features</a>
@@ -42,13 +37,7 @@ Built with React.js for the user interface, Appwrite for the Trending Movies Alg
 
 👉 **Responsiveness**: Fully responsive design that works seamlessly across devices.
 
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
 ## <a name="deployment">🤸 Deployment</a>
 
 The application is live! Check it out here:  
 🔗 **[Live Demo on Vercel](https://your-app-name.vercel.app/)**
-
-[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-blue?style=for-the-badge&logo=vercel)](https://your-app-name.vercel.app/)
