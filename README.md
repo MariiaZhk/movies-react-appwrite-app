@@ -40,4 +40,4 @@ Built with React.js for the user interface, Appwrite for the Trending Movies Alg
 ## <a name="deployment">🤸 Deployment</a>
 
 The application is live! Check it out here:  
-🔗 **[Live Demo on Vercel](https://your-app-name.vercel.app/)**
+🔗 **[Live Demo on Vercel](https://movies-react-appwrite-app.vercel.app/)**
